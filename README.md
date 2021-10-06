@@ -93,5 +93,73 @@ Replace `txUZ0iqCyu69qQFq08U420hOp3/A4lYtrHVrJrAYBys=` in the command above with
 If there is something that can be done better, or if this documentation can be improved in any way, please submit a Pull Request with your fixes or edits.
 
 ---
+## Edge Case Requirements
+
+### Configure automated Pi-Hole updates and scheduled reboots
+
+Pause and consider if you need this for mission critical Pi-hole Servers. If you are running multiple Pi-Holes for redundancy, and you choose to implement this, stagger the upgrade and reboot schedules. Be prepared to perform health-checks to ensure all services are operational. Blind upgrades are not gauranteed to be smooth.
+
+**Note:** The following steps assume you have **nano** installed. You can use any other editor (e.g **vim**) to do this.
+
+Create the script to check if a reboot is required or not, by checking for the presence of the **/var/run/reboot-required** file, by running:
+
+```bash
+sudo nano /etc/cron.daily/zz-restart-if-required
+```
+
+Paste the following into **/etc/cron.daily/zz-restart-if-required**:
+
+> ```bash
+> #!/bin/sh
+> if [ -f /var/run/reboot-required ]; then
+>   /sbin/shutdown -r now
+> fi
+> ```
+
+Set the correct permissions:
+
+```bash
+sudo chmod 755 /etc/cron.daily/zz-restart-if-required
+```
+
+Check for Pi-Hole updates and perform an update if one is available:
+
+Create the script to update PiHole:
+
+```bash
+sudo nano /etc/cron.daily/update-pi-hole
+```
+
+Paste the following into **/etc/cron.daily/update-pi-hole**:
+
+> ```bash
+> #!/bin/sh
+> /usr/local/bin/pihole -up
+> ```
+
+Set the correct permissions:
+
+```bash
+sudo chmod 755 /etc/cron.daily/update-pi-hole
+```
+
+### Enabling or Blocking communication between Wireguard Clients
+
+If you wish to enable communication between select Wireguard clients, using the same CIDR notation under **Allowed IPs** in each Client Configuration file is necessary. This table could help you plan which devices get what IPs.
+
+**TODO:** provide a subnet cheatsheet for IPv6 addresses
+
+#### Subnet Cheatsheet
+
+| CIDR Notation | Address Range |
+| -- | -- |
+| 10.66.66.0/30 | 10.66.66.1 - 10.66.66.2 |
+| 10.66.66.0/29 | 10.66.66.1 - 10.66.66.6 |
+| 10.66.66.0/28 | 10.66.66.1 - 10.66.66.14 |
+| 10.66.66.0/27 | 10.66.66.1 - 10.66.66.30 |
+| 10.66.66.0/26 | 10.66.66.1 - 10.66.66.62 |
+| 10.66.66.0/25 | 10.66.66.1 - 10.66.66.126 |
+| 10.66.66.0/24 | 10.66.66.1 - 10.66.66.254 |
+
 
 
