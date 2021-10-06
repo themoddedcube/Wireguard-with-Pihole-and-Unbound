@@ -19,9 +19,9 @@ The output can be copy and pasted into a blank text file on your client device, 
 Install the [official Wireguard Android App](https://play.google.com/store/apps/details?id=com.wireguard.android) and use a QR Code to import your VPN profile.
 
 <a href="https://f-droid.org/en/packages/com.wireguard.android/" target="_blank">
-<img src="./images/logos/f-droid.svg" alt="Get it on F-Droid" height="80"></a>
+<img src="./images/f-droid.svg" alt="Get it on F-Droid" height="80"></a>
 <a href="https://play.google.com/store/apps/details?id=com.wireguard.android" target="_blank">
-<img src="./images/logos/google-play.svg" alt="Get it on Google Play" height="60"></a>
+<img src="./images/google-play.svg" alt="Get it on Google Play" height="60"></a>
 
 To configure a persistent tunnel on Android, that reconnects after the device restarts, you have to edit the system-wide VPN settings:
 
