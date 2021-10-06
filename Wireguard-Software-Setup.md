@@ -70,6 +70,6 @@ Install the [official Wireguard macOS Client](https://itunes.apple.com/us/app/wi
 
 ## Windows
 
-Install the [official Wireguard Windows Client](https://www.wireguard.com/install/) and use the **wg0-client-1.conf** file to import your VPN profile.
+Install the [official Wireguard Windows Client](https://www.wireguard.com/install/) and use the **wg0-client-2.conf** file to import your VPN profile.
 
 Get the latest Windows Client from [wireguard.com/install](https://www.wireguard.com/install/)
