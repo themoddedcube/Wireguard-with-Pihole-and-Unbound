@@ -31,7 +31,7 @@ While Pi-hole was originally authored to run on a Raspberry Pi, people have foll
 
 ```bash
 sudo su -
-curl -O https://raw.githubusercontent.com/rajannpatel/Pi-Hole-on-Google-Compute-Engine-Free-Tier-with-Full-Tunnel-and-Split-Tunnel-Wireguard-VPN-Configs/master/setup.sh
+curl -O https://raw.githubusercontent.com/themoddedcube/Wireguard-with-Pihole-and-Unbound/master/setup.sh
 chmod +x setup.sh
 bash ./setup.sh 
 ```
@@ -90,8 +90,6 @@ Replace `txUZ0iqCyu69qQFq08U420hOp3/A4lYtrHVrJrAYBys=` in the command above with
 ## Contributions Welcome
 
 If there is something that can be done better, or if this documentation can be improved in any way, please submit a Pull Request with your fixes or edits.
-
-        
 
 ---
 
