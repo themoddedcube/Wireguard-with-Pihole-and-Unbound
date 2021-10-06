@@ -88,11 +88,6 @@ sudo wg set wg0 peer txUZ0iqCyu69qQFq08U420hOp3/A4lYtrHVrJrAYBys= remove
 
 Replace `txUZ0iqCyu69qQFq08U420hOp3/A4lYtrHVrJrAYBys=` in the command above with the appropriate **peer:** you wish to delete on your server.
 
-## Contributions Welcome
-
-If there is something that can be done better, or if this documentation can be improved in any way, please submit a Pull Request with your fixes or edits.
-
----
 ## Edge Case Requirements
 
 ### Configure automated Pi-Hole updates and scheduled reboots
@@ -160,6 +155,12 @@ If you wish to enable communication between select Wireguard clients, using the 
 | 10.66.66.0/26 | 10.66.66.1 - 10.66.66.62 |
 | 10.66.66.0/25 | 10.66.66.1 - 10.66.66.126 |
 | 10.66.66.0/24 | 10.66.66.1 - 10.66.66.254 |
+
+## Contributions Welcome
+
+If there is something that can be done better, or if this documentation can be improved in any way, please submit a Pull Request with your fixes or edits.
+
+---
 
 
 
