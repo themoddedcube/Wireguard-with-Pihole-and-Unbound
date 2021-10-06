@@ -53,7 +53,7 @@ From the Arch User Repository, you can install **networkmanager-wireguard-git**.
 Install the [official Wireguard iOS App](https://itunes.apple.com/us/app/wireguard/id1441195209?ls=1&mt=8) and use a QR Code to import your VPN profile.
 
 <a href="https://itunes.apple.com/us/app/wireguard/id1441195209?ls=1&mt=8" target="_blank">
-<img src="./images/logos/app-store.svg" alt="Get it on the App Store" height="60"></a>
+<img src="./images/app-store.svg" alt="Get it on the App Store" height="60"></a>
 
 Steps to enable Always-on VPN Tunnel:
 
@@ -66,7 +66,7 @@ Steps to enable Always-on VPN Tunnel:
 Install the [official Wireguard macOS Client](https://itunes.apple.com/us/app/wireguard/id1451685025?ls=1&mt=12) and use the **wg0-client-1.conf** file to import your VPN profile.
 
 <a href="https://itunes.apple.com/us/app/wireguard/id1451685025?ls=1&mt=12" target="_blank">
-<img src="./images/logos/app-store-macOS.svg" alt="Get it on the Mac App Store" height="60"></a>
+<img src="./images/app-store-macOS.svg" alt="Get it on the Mac App Store" height="60"></a>
 
 ## Windows
 
