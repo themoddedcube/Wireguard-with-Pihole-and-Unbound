@@ -44,7 +44,7 @@ bash ./setup.sh
 
 5. [Install and configure Unbound DNS server](https://docs.pi-hole.net/guides/dns/unbound/)
 
-6. Check to see if packet forwarding is enabled for Wireguard by doing `sudo nano /etc/sysctl.conf`, look for `net.ipv4.ip_forward=1` and if it is commented uncomment it and save the script and reboot.
+6. Check to see if packet forwarding is enabled for Wireguard by running `sudo nano /etc/sysctl.conf`, look for `net.ipv4.ip_forward=1` make sure it is uncommented, save the script and reboot the system.
 
 7.  Create another VPN Client Profile by running `./setup.sh` again, you can create 253 profiles without modifying the script.
 
